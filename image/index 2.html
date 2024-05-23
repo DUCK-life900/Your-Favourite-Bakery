@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to common styles -->
+    <link rel="stylesheet" href="./common.css">
+    <!-- Link to landing page specific styles -->
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="icon" href="./favicon_io.zip" type="image/x-icon">
+
+    <title>Your Favourite Bakery</title>
+</head>
+
+<body>
+    <!-- Progress Bar -->
+    <div id="progressBarContainer">
+        <div id="progressBar"></div>
+    </div>
+
+    <!-- Added id for header -->
+    <header id="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="./logo-bakery.png" alt="Logo de la boulangerie"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="./index 2.html">Accueil</a></li>
+                    <li><a href="./contact.html">Contactez Nous</a></li>
+                    <li><a href="./evenement.html">Événements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Moved <div> with banner image outside of the <header> -->
+    <div>
+        <img src="./BANNER004.png" alt="pain au chocolat" class="banner-acceuil">
+    </div>
+
+    <h1>De délicieux produits frais 100 % faits maison. Un savoir-faire artisanal français et des matières premières de haute qualité.</h1>
+    <h3>Nous avons le plaisir de vous accueillir du Mardi au Dimanche dans nos quatre boutiques parisiennes.</h3>
+
+    <div class="container">
+        <img src="./pain.png" alt="pain boulanger" class="photo">
+        <div class="texte">
+            <p>Tous nos pains et viennoiseries sont réalisés manuellement, sur place, à partir de farines bio et farines CRC (culture raisonnée contrôlée). Afin d’obtenir un arôme délicat et développer des qualités nutritionnelles intéressantes pour l’organisme, nous utilisons du levain naturel et prenons soin d’accorder du temps à nos préparations - minimum 24 heures - pour obtenir une fermentation parfaite, un pain plus digeste et plus goûteux.</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="container1">
+        <div class="texte1">
+            <p>Leonie, c’est l’amour de l’artisanat traditionnel français. La qualité de nos ingrédients et la fraîcheur de nos produits sont au centre de notre travail. Nous avons à cœur de vous proposer des produits à base d’ingrédients issus de l’agriculture biologique française et européenne, 100 % faits-maison, réalisés sur place par une équipe d’artisans boulangers et pâtissiers passionnés.</p>
+        </div>
+        <img src="./ingredients.png" alt="eclere patisserie" class="photo1">
+    </div>
+    <div class="container2">
+        <h1>Suivez notre aventure sur Instagram !</h1>
+    </div>
+  <div class="carousel-container">
+      <div class="slides fade">
+        <div class="number-text"></div>
+        <img src="./landing-img1.png" />
+      </div>
+
+      <div class="slides fade">
+        <div class="number-text"></div>
+        <img src="./landing-img2.png" />
+      </div>
+
+      <div class="slides fade">
+        <div class="number-text"></div>
+        <img src="./landing-img3.png" />
+      </div>
+
+      <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>Adresse : 123 Rue de la Boulangerie, Ville, Pays</p>
+            <p>Email : contact@exemple.com</p>
+            <p>Téléphone : +123 456 789</p>
+        </div>
+    </footer>
+
+    <script src="./common.js"></script>
+    <script src="./progressBar.js"></script>
+    <script src="./landing.js"></script>
+
+
+</body>
+</html>
